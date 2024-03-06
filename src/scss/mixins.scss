@@ -1,0 +1,17 @@
+@mixin btn-icon() {
+    background-color: $button-icon;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: 1px solid transparent;
+    outline-offset: 4px;
+    transition: transform .5s, outline-color .5s;
+
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+

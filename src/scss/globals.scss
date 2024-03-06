@@ -1,0 +1,31 @@
+@import './fonts.scss';
+
+.page-body {
+    font-family: 'TT Lakes', sans-serif;
+    margin: 0;
+    max-width: 1440px;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.page-main {
+    background-color: #F8F8F8; 
+    // padding-top: 32px; 
+    font-family: 'TT Lakes';
+    // padding: 0 32px;
+}
+
+.page-logo {
+    background-image: url("../img/true/logo.svg");
+    background-size: 97px 51px;
+    width: 100px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}

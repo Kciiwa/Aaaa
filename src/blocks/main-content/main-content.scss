@@ -1,0 +1,29 @@
+.main-content {
+    position: relative;
+    padding: 32px;
+    background-color: $bgColor-main;
+    
+    @media (max-width: 768px) {
+        padding: 16px;
+    }
+
+    &--blur::before {
+        content: '';
+        // z-index: 2;
+        // filter: blur(3px);
+        position: absolute;
+        z-index: 5;
+        top: -100px;
+        left: -50px;
+        background: rgba(255, 255, 255, 0.2);
+        width: 120%;
+        height: 120%;
+        backdrop-filter: blur(5px);
+
+        @media (min-width: 1000px) {
+            &{
+                display: none;
+            }
+        }
+    }
+}
