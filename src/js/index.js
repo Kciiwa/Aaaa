@@ -6,6 +6,7 @@ import '../blocks/menu-burger/menu-burger.js'
 import '../blocks/sliders/sliders.js'
 import '../blocks/brands/brands.js'
 import '../blocks/repair/repair.js'
+import '../blocks/services/services.js'
 
 
 console.log('Works!')

@@ -2,10 +2,22 @@
   box-sizing: border-box;
 }
 .list-header {
+  border-top: 1px solid $border-title;
   background-image: linear-gradient(to right, #F8F8F8, #fff);
   margin: 15px 0;
   margin-right: -32px;
-  padding: 32px 0;
+  padding: 16px 0;
+
+  // @media (max-width: 500px) {
+  //   padding: 16px 0;
+  // }
+
+  // &::before {
+  //   content: '';
+  //   width: 110%;
+  //   height: 1px;
+  //   background-color: $border-title;
+  // }
 }
 
 .list-header__title {

@@ -11,6 +11,10 @@
     //     padding: 0 32px;
     // }
 
+    @media (max-width: 1000px) {
+        margin-bottom: 30px;
+    }
+
     @media (max-width: 768px) {
         flex-direction: column;
         margin-bottom: 40px;
