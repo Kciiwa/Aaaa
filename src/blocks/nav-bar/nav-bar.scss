@@ -2,8 +2,11 @@
 .nav-bar {
     min-height: 100px;
 
-    @media (max-width: 692px) {
+    @media (max-width: 692px) and (min-width: 600px) {
         min-height: 150px;
+    }
+    @media (max-width: 600px) {
+        min-height: 70px;
     }
 
     .list {
