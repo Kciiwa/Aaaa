@@ -1250,7 +1250,7 @@ a {
       padding-bottom: 0; } }
 
 .menu-burger {
-  position: fixed;
+  position: static;
   top: 0px;
   min-width: 320px;
   height: 100%;
