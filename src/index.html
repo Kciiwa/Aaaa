@@ -13,15 +13,14 @@
     <!-- <header class="page-header"> -->
       <!-- Icon bar -->
       <header class="icon-bar">
-              <ul class="icon-bar__list">
-                  <li class="icon-bar__item">
+              <ul class="icon-bar__list icon-bar__list--gap-32px">
+                  <li class="icon-bar__item icon-bar__item--divider">
                       <!-- Burger -->
                       <button class="icon-bar__btn flash-btn btn-burger"></button>
                   </li>
-                  <li class="icon-bar__item">
-                  <!-- divider -->
+                  <!-- <li class="icon-bar__item">
                       <div class="icon-bar__divider icon-bar__divider--display-none"></div>
-                  </li>
+                  </li> -->
                   <li class="icon-bar__item">
                       <!-- logo -->
                       <a href="mainPage.html" class="logo">
@@ -32,12 +31,12 @@
           <ul class="icon-bar__list icon-bar__list--display-none icon-bar__list--margin-auto">
               <li class="icon-bar__item">
                   <!-- Call icon -->
-                  <button class="icon-bar__btn flash-btn btn-call"></button>
+                  <button id="icon-bar-call" class="icon-bar__btn flash-btn btn-call"></button>
                   
               </li>
               <li class="icon-bar__item">
                   <!-- Chat icon-->
-                  <button class="icon-bar__btn flash-btn btn-chat"></button>
+                  <button id="icon-bar-chat" class="icon-bar__btn flash-btn btn-chat"></button>
               </li>
               <li class="icon-bar__item">
                   <!-- Profile icon -->
@@ -45,8 +44,8 @@
               </li>
           </ul>
           <!-- Divider  -->
-          <div class="icon-bar__divider"></div>
-          <ul class="icon-bar__list">
+          <!-- <div class="icon-bar__divider"></div> -->
+          <ul class="icon-bar__list divider">
               <li class="icon-bar__item">
                   <!-- Repair icon -->
                   <button class="icon-bar__btn flash-btn btn-repair"></button>
@@ -66,7 +65,7 @@
                     <ul class="menu-header__list ul">
                         <!-- icon  -->
                         <li class="menu-header__item menu-header__item--close">
-                            <button class="icon-bar__btn flash-btn btn-close"></button>
+                            <button class="icon-bar__btn flash-btn btn-close btn-close--js"></button>
                         </li>
                         <!-- logo  -->
                         <li class="menu-header__item menu-header__item--rmargin-auto">
@@ -85,10 +84,10 @@
                     <nav class="nav nav--mrgl">
                         <ul class="nav__list ul">
                             <li class="nav__item">
-                                <div class="highlight"></div>
+                                <!-- <div class="highlight"></div> -->
                                 <a href="" class="nav__link nav__link--active link">Ремонт техники</a>
                             </li>
-                            <li class="nav__item">
+                            <li class="nav__item nav__item--active">
                                 <a href="" class="nav__link link">Услуги и сервисы</a>
                             </li>
                             <li class="nav__item">
@@ -118,10 +117,10 @@
                         <ul class="ul icons__list">
                             <!-- icons  -->
                             <li class="icons__item">
-                                <button class="icon-bar__btn flash-btn btn-call"></button>
+                                <button id="burger-call" class="icon-bar__btn flash-btn btn-call btn-call--listener"></button>
                             </li>
                             <li class="icons__item">
-                                <button class="icon-bar__btn flash-btn btn-chat"></button>
+                                <button id="burger-chat" class="icon-bar__btn flash-btn btn-chat"></button>
                             </li>
                             <li class="icons__item">
                                 <button class="icon-bar__btn flash-btn btn-profile"></button>
@@ -131,11 +130,11 @@
                     <address class="contact">
                         <!-- email  -->
                         <div class="contact__link">
-                            <a class="link contact__email" href="mailto: mail@cps.com">mail@cps.com</a>
+                            <a class="contact__email link" href="mailto: mail@cps.com">mail@cps.com</a>
                         </div>
                         <!-- number  -->
                         <div class="contact__link">
-                            <a href="tel: 8 800 890 8900" class="link contact__number">8 800 890 8900</a>
+                            <a href="tel: 8 800 890 8900" class="contact__number">8 800 890 8900</a>
                         </div>
                     </address>
         
@@ -155,12 +154,47 @@
                 </footer>
             </div>
         </aside>
+
         <section class="main-content">
+            
+        <form class="modal chat" action="" method="post">
+            <button id="chat-close-btn" class="icon-bar__btn flash-btn btn-close btn-close--chat"></button>
+            <fieldset class="form-modal">
+                <legend class="form-title">
+                    <p class="form-title__text">Обратная связь</p>
+                </legend>
+                
+                <input class="input" type="text" name="name" id="name" placeholder="Имя" required autofocus>
+                <input class="input" type="tel" name="phone-number" placeholder="Телефон" required>
+                <input class="input" type="email" name="email" id="email" placeholder="Электронная почта" required>
+                <textarea class="input textarea" name="message" id="message" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                <p class="consent">Нажимая “отправить”, вы даете согласие на <a class="consent__link" href="">обработку персональных данных</a> и соглашаетесь с нашей <a class="consent__link" href="">политикой конфиденциальности</a></p>
+                <button class="buy-btn buy-btn--modal">
+                    <p class="buy-btn__text buy-btn__text--modal">Отправить</p>
+                    <span class="buy-btn__icon"></span>
+                </button>
+            </fieldset>
+        </form>
+        <form class="modal call" action="" method="post">
+            <button id="call-close-btn" class="icon-bar__btn flash-btn btn-close btn-close--call"></button>
+            <fieldset class="form-modal">
+                <legend class="form-title">
+                    <p class="form-title__text">Заказать звонок</p>
+                </legend>
+                <input class="input" type="tel" name="phone-number" placeholder="Телефон" required>
+                <p class="consent">Нажимая “отправить”, вы даете согласие на <a class="consent__link" href="">обработку персональных данных</a> и соглашаетесь с нашей <a class="consent__link" href="">политикой конфиденциальности</a></p>
+                <button class="buy-btn buy-btn--modal">
+                    <p class="buy-btn__text buy-btn__text--modal">Отправить</p>
+                    <span class="buy-btn__icon"></span>
+                </button>
+            </fieldset>
+        </form>
+
                 <!-- Title of page + icons for desctop -->
                 <section class="page-title page-title--margin">
                     <div class="page-title__title">
                         <!-- Highlight  -->
-                        <div class="page-title__highlight"></div>
+                        <!-- <div class="page-title__highlight"></div> -->
                         <h1 class="page-title__text">Услуги и сервисы</h1>
                     </div>
                     <!-- Right side icons  -->
@@ -182,7 +216,7 @@
                 <!-- Navigation bar  -->
                 <nav class="nav-bar nav-bar--margin">
                     <ul class="list gradient">
-                        <li class="list__item">
+                        <li class="list__item list__item--active">
                             <a class="list__link list__link--active" href="">Ремонтируемые бренды</a>
                         </li>
                         <li class="list__item">
@@ -490,8 +524,8 @@
                             <td class="services-list__cell">30-120 мин</td>
                             <td class="services-list__cell services-list__cell--btn">
                                 <button class="buy-btn buy-btn--cell">
-                                <p class="buy-btn__text">Заказать</p>
-                                <span class="buy-btn__icon"></span>
+                                    <p class="buy-btn__text">Заказать</p>
+                                    <span class="buy-btn__icon"></span>
                                 </button>
                             </td>
                         </tr>

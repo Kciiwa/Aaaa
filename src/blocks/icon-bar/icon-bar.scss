@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 24px 16px;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
     box-shadow: 0px 2px 0px 0px #D9FFF5;
 
     
@@ -22,6 +22,7 @@
         align-items: center;
         gap: 16px;
         list-style-type: none;
+        // position: relative;
 
         @media (max-width: 600px) {
             &--display-none {
@@ -31,6 +32,14 @@
 
         &--margin-auto {
             margin-left: auto;
+        }
+
+        &--gap-32px {
+            gap: 32px;
+
+            @media (max-width: 768px) {
+                gap: 16px;
+            }
         }
     }
 
@@ -62,14 +71,6 @@
         background-image: url("../img/true/profile.svg");
     }
 
-    &__divider {
-        padding: 0.1px;
-        width: 2px;
-        height: 32px;
-        background-color: #EAEAEA;
-        border-radius: 1px;
-    }
-
     .page-logo {
         background-image: url("../img/true/logo.svg");
         background-size: 97px 51px;
@@ -82,3 +83,34 @@
         cursor: pointer;
     }
 }
+
+.divider {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $border-slider;
+        left: -16px;
+    }
+}
+
+.icon-bar__item--divider {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $border-slider;
+        left: 56px;
+        top: 6px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+

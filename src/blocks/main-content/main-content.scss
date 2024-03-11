@@ -9,23 +9,26 @@
         padding-bottom: 0;
     }
 
-    &--blur::before {
-        content: '';
-        // z-index: 2;
-        // filter: blur(3px);
-        position: absolute;
-        z-index: 5;
-        top: -100px;
-        left: -50px;
-        background: rgba(255, 255, 255, 0.2);
-        width: 120%;
-        height: 120%;
-        backdrop-filter: blur(5px);
+    // &--blur::before {
+    //     content: '';
+    //     // z-index: 2;
+    //     // filter: blur(3px);
+    //     position: absolute;
+    //     z-index: 100;
+    //     top: -100px;
+    //     left: -50px;
+    //     background: rgba(255, 255, 255, 0.2);
+    //     width: 120%;
+    //     height: 120%;
+    //     backdrop-filter: blur(5px);
 
-        @media (min-width: 1000px) {
-            &{
-                display: none;
-            }
-        }
-    }
+            // filter: blur(10px);
+            // transition: all 0.5s ease-out;
+
+//         @media (min-width: 1000px) {
+//             &{
+//                 display: none;
+//             }
+//         }
+//     }
 }

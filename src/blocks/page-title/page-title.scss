@@ -3,27 +3,24 @@
     justify-content: space-between;
     align-items: center;
 
-    &__title {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__highlight {
+    &::before {
+        content: '';
         height: 40px;
         width: 4px;
-        margin-left: -32px;
-        background-color: #41F6D7;
         border-radius: 0px 10px 10px 0px;
-        white-space: nowrap;
-
-        @media (max-width: 768px) {
-            margin-left: -16px;
+        background-color: $hightlight;
+        position: absolute;
+        left: 0;
+        top: 16px;
+    
+        @media (min-width: 768px) {
+          top: 32px;
         }
-    }
+      }
 
     &__text {
         margin: 0;
-        margin-left: 30px;
+        // margin-left: 30px;
     
         color: #1B1C21;
         font-size: 28px;
@@ -35,9 +32,6 @@
     }
 }
 
-//modifier 
-
 .page-title--margin {
-    // margin: 24px 32px;
     margin-bottom: 32px;
 }

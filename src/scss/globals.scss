@@ -1,4 +1,5 @@
 @import './fonts.scss';
+@import './variables.scss';
 
 .page-body {
     font-family: 'TT Lakes', sans-serif;
@@ -12,10 +13,8 @@
 }
 
 .page-main {
-    background-color: #F8F8F8; 
-    // padding-top: 32px; 
+    background-color: $bgColor-main; 
     font-family: 'TT Lakes';
-    // padding: 0 32px;
 }
 
 .page-logo {

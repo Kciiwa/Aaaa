@@ -1,0 +1,146 @@
+.modal {
+  width: 440px;
+  position: absolute;
+  background-color: #fff;
+  height: 940px;
+  z-index: 10;
+  top: -1200px;
+  right: 0;
+  padding: 32px;
+  box-shadow: -10px 2px 30px -5px rgba(34, 60, 80, 0.56);
+  transition: top 0.3s ease, width 0.3s ease, height 0.3s ease;
+
+  &--show {
+    top: 0;
+    @media (max-width: 1000px) {
+      top: -102px;
+    }
+    @media (max-width: 768px) {
+      width: 320px;
+      height: 676px;
+    }
+    
+  }
+}
+
+.form-title__text {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin-bottom: 24px;
+
+  &::before {
+    content: '';
+    height: 40px;
+    width: 3px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: $hightlight;
+    position: absolute;
+    left: 0;
+    top: 30px;
+
+    @media (max-width: 768px) {
+      top: 88px;
+      width: 4px;
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+
+.btn-close--chat {
+  background-image: url("../img/true/close.svg");
+  position: absolute;
+  top: 24px;
+  left: -60px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: -8px;
+    left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.btn-close--call {
+  background-image: url("../img/true/close.svg");
+  position: absolute;
+  top: 24px;
+  left: -60px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: -8px;
+    left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.buy-btn--modal {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 10px 0 0 auto;
+  text-align: center;
+  width: 132px;
+  padding-top: 2px;
+  padding-left: 7px;
+}
+
+.buy-btn__text::after {
+  position: absolute;
+  margin-left: 18px;
+}
+
+.input {
+  height: 48px;
+  border: solid 1px $border-slider;
+  border-radius: 10px;
+  padding: 16px;
+  // color: pink;
+
+  &::placeholder {
+    color: $pagination-acive;
+    font-family: 'TT LAkes';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &:hover {
+    border-color: $button-icon;
+  }
+}
+
+.textarea {
+  height: auto;
+}
+
+.consent {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: $bright-text;
+
+  &__link {
+    color: $button-icon;
+
+    &:hover {
+      color: $button-hover;
+    }
+
+    &:active {
+      color: $button-active;
+    }
+  }
+}
+

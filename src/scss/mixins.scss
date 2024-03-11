@@ -13,5 +13,57 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    &:hover {
+        background-color: $button-hover;
+        transform: scale(1.1);
+    }
+
+    &:active {
+        background-color: $button-active;
+        transform: scale(0.9);
+    }
 }
+
+@mixin link() {
+    transition: color 0.3s ease;
+    &:hover {
+        color: $hightlight;
+    }
+
+    &:active {
+        color: $bright-text;
+    }
+}
+
+@mixin hover-active-slide() {
+    transition: border-color 0.2s ease;
+    &:hover {
+        border-color: $hightlight;
+    }
+
+    &:active {
+        .brand-list__icon, .repair-list__icon {
+            background-color: $button-icon;
+            background-image: url('../img/brands/whiteDropdown.svg');
+            transition: background-color 0.4s ease;
+        }
+    }
+}
+
+@mixin buy-button {
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $button-hover;
+        transform: scale(1.05);
+        transition: transform 0.4s ease, background-color 0.4s ease;
+    }
+
+    &:active {
+        background-color: $button-active;
+        transform: scale(0.95);
+        transition: transform 0.4s ease, background-color 0.4s ease;
+    }
+}
+
 

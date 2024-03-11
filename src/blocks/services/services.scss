@@ -31,16 +31,6 @@
     }
   }
 
-
-
-  // @media (max-width: 400px) {
-  //   .services-slider {
-  //     height: 260px;
-  //     width: 200px;
-  //   }
-  // }
-
-
 }
 .services__slide {
   max-width: 260px;
@@ -100,6 +90,7 @@
   height: 32px;
   display: flex;
   justify-content: space-between;
+  @include buy-button();
 
   @media (min-width: 768px) {
     position: static;
@@ -170,6 +161,10 @@
     height: 50px;
     background-color: $bgColor-other;
 
+    &:hover {
+      background-color: $bgColor-main;
+    }
+
     &:not(:last-child)::after {
       content: '';
       position: absolute;
@@ -194,11 +189,6 @@
     font-weight: 300;
     line-height: 14px;
     letter-spacing: 0.2px;
-    // margin-left: 5px;
-    // text-align: right;
-    // &--btn {
-    //   text-align: right;
-    // }
   }
 }
 
@@ -231,18 +221,17 @@
   font-weight: 700;
   color: #1b1c21;
   margin-bottom: 30px;
-  // &::after {
-  //   display: block;
-  //   content: '';
-  //   background-image: url('../img/brands/dropdown.svg');
-  //   background-repeat: no-repeat;
-  //   background-position: center;
+  cursor: pointer;
 
-  //   margin-right: 5px;
-  //   width: 24px;
-  //   height: 24px;
-  //   position:absolute;
-  // }
+  &:hover {
+    transition: color 0.3s ease;
+    color: $button-icon;
+  }
+
+  &:active {
+    transition: color 0.3s ease;
+    color: $button-hover;
+  }
 
   &--dropdown {
     position: relative;
