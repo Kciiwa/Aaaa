@@ -1891,9 +1891,18 @@ a {
     font-size: 14px;
     line-height: 16px; }
 
+.footer-paragraph-link {
+  transition: all 0.4s ease;
+  text-decoration: none;
+  cursor: pointer; }
+  .footer-paragraph-link:hover {
+    color: #ff91b2; }
+  .footer-paragraph-link:active {
+    color: #ea3b70; }
+
 .modal {
   width: 440px;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   height: 940px;
   z-index: 10;
@@ -1904,9 +1913,6 @@ a {
   transition: top 0.3s ease, width 0.3s ease, height 0.3s ease; }
   .modal--show {
     top: 0; }
-    @media (max-width: 1000px) {
-      .modal--show {
-        top: -102px; } }
     @media (max-width: 768px) {
       .modal--show {
         width: 320px;
