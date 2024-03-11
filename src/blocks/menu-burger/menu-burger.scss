@@ -9,9 +9,12 @@
     left:0;
     transition: left 0.3s ease;
 
+    // @media (min-width: 1000px) {
+    //     position: static;
+    // }
+
     @media (max-width: 1000px) {
         position: fixed;
-        
         z-index: 10;
     }
 
