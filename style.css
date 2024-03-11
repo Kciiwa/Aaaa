@@ -1259,7 +1259,7 @@ a {
   transition: left 0.3s ease; }
   @media (max-width: 1000px) {
     .menu-burger {
-      position: absolute;
+      position: fixed;
       z-index: 10; } }
   .menu-burger .container-aside {
     box-sizing: border-box;
@@ -1294,6 +1294,9 @@ a {
     flex: 1 1 auto; }
   .menu-burger .nav {
     margin-bottom: 40px; }
+    @media (max-height: 660px) {
+      .menu-burger .nav {
+        margin-bottom: 15px; } }
     .menu-burger .nav__list {
       display: flex;
       flex-direction: column;
