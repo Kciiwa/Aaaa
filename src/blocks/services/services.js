@@ -1,4 +1,4 @@
-// import { showHideList } from "../sliders/sliders";
+
 import { resizableSwiper } from "../sliders/sliders";
 
 window.addEventListener('DOMContentLoaded', () => {

@@ -56,8 +56,22 @@
 
   .footer_paragraph{
     font-family: "TT Lakes";
-    color: #7E7E82;
+    color: $bright-text;
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+.footer-paragraph-link {
+  transition: all 0.4s ease;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $button-hover;
+  }
+
+  &:active {
+    color: $button-active;
   }
 }

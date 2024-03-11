@@ -157,7 +157,6 @@
 
   &__string {
     position: relative;
-    // border-bottom: 1px solid #eaeaea;
     height: 50px;
     background-color: $bgColor-other;
 
@@ -212,7 +211,6 @@
 }
 
 .price__offer {
-  // display: flex;
   font-family: TT Lakes;
   font-size: 16px;
   line-height: 24px;
@@ -236,13 +234,10 @@
   &--dropdown {
     position: relative;
     &::after {
-      // display: block;
       content: '';
       background-image: url('../img/brands/dropdown.svg');
       background-repeat: no-repeat;
       background-position: center;
-  
-      // margin-right: 5px;
       width: 24px;
       height: 24px;
       position:absolute;

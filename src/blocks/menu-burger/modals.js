@@ -3,12 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const btnBurger = document.querySelector('.btn-burger');
   const btnClose = document.querySelector('.btn-close--js');
   
-  // const hideCallButton = document.querySelector('.btn-close--call');
-  // const hideChatButton = document.querySelector('.btn-close--chat');
   const call = document.querySelector('.call');
   const chat = document.querySelector('.chat');
-  // const showChatButton = menuBurger.querySelectorAll('.btn-chat');
-  // const showCallButton = document.querySelectorAll('.btn-call');
 
   const idIconBarCallButton = document.getElementById('icon-bar-call');
   const idBurgerCallButton = document.getElementById('burger-call');

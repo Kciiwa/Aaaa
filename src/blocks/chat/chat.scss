@@ -1,6 +1,6 @@
 .modal {
   width: 440px;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   height: 940px;
   z-index: 10;
@@ -12,9 +12,7 @@
 
   &--show {
     top: 0;
-    @media (max-width: 1000px) {
-      top: -102px;
-    }
+    
     @media (max-width: 768px) {
       width: 320px;
       height: 676px;
