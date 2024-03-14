@@ -1,5 +1,5 @@
-import { showHideList } from "../sliders/sliders";
-import { resizableSwiper } from "../sliders/sliders";
+import { showHideList } from "./sliders";
+import { resizableSwiper } from "./sliders";
 
 window.addEventListener('DOMContentLoaded', () => {
   resizableSwiper(

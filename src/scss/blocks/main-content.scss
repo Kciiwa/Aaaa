@@ -3,6 +3,7 @@
     padding: 32px;
     padding-bottom: 0;
     background-color: $bgColor-main;
+    max-width: 100%;
     
     @media (max-width: 768px) {
         padding: 16px;

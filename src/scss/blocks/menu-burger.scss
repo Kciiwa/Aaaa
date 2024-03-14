@@ -3,24 +3,21 @@
     position: sticky;
     top: 0px;
     min-width: 320px;
-    height: 100%;
-    max-height: 1024px;
+    height: 100vh;
+    // max-height: 1024px;
 
     left:0;
     transition: left 0.3s ease;
 
-    // @media (min-width: 1000px) {
-    //     position: static;
-    // }
-
-    @media (max-width: 1000px) {
+    @media (max-width: 1366px) {
         position: fixed;
         z-index: 10;
     }
 
     .container-aside {
         box-sizing: border-box;
-        min-height: 100%;
+        // min-height: 100%;
+        height: 100vh;
         padding: 16px;
         display: flex;
         flex-direction: column;
@@ -64,6 +61,7 @@
     }
 
     .menu-main {
+        // margin-bottom: auto;
         flex: 1 1 auto;
     }
 
@@ -125,6 +123,7 @@
     }
 
     .menu-footer {
+        margin-top: auto;
         .icons {
             &__list {
                 display: flex;

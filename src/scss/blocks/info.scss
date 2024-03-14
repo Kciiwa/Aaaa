@@ -8,7 +8,7 @@
         margin-bottom: 30px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
         flex-direction: column;
         margin-bottom: 40px;
     }
@@ -20,12 +20,16 @@
         gap: 16px;
         height: 220px;
         overflow-y: hidden;
+        height: auto;
 
-        @media (max-width: 1000px) {
-            height: 116px;
-        }
-        @media (min-width: 1001px) {
-            height: 160px;
+        &--hidden {
+
+            @media (max-width: 1000px) {
+                height: 116px;
+            }
+            @media (min-width: 1001px) {
+                height: 160px;
+            }
         }
     }
 
@@ -49,7 +53,7 @@
     &__image {
         min-width: 50%;
         
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             margin: 0 -32px;
         }
     }
@@ -59,7 +63,7 @@
         height: auto;
         border-radius: 8px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             & {
                 border-radius: 0;
             }

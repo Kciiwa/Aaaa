@@ -10,6 +10,10 @@
     margin-left: auto;
     box-sizing: border-box;
     overflow-x: hidden;
+
+    &--modal-open {
+        overflow: hidden;
+    }
 }
 
 .page-main {
