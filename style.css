@@ -1804,7 +1804,8 @@ a {
   max-height: 1000px; }
   @media (min-width: 769px) {
     .services-slider {
-      max-width: 1056px; } }
+      max-width: 1056px;
+      margin-left: 1px; } }
 
 .services__slide {
   max-width: 260px; }
