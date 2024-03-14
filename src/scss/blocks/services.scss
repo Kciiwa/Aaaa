@@ -139,9 +139,15 @@
 }
 
 .buy-btn {
-  position: absolute;
-  top: 75%;
-  left: 48%;
+
+    &--services {
+    position: absolute;
+    top: 75%;
+    left: 48%;
+  }
+  // position: absolute;
+  // top: 75%;
+  // left: 48%;
   border-radius: 20px;
   border-color: transparent;
   background-color: $button-icon;
@@ -155,6 +161,12 @@
     position: static;
     justify-self: end;
   }
+
+  // &--services {
+  //   position: absolute;
+  //   top: 75%;
+  //   left: 48%;
+  // }
 
   &__text {
     text-transform: uppercase;

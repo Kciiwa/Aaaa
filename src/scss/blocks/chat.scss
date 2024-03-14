@@ -15,7 +15,7 @@
     
     @media (max-width: 768px) {
       width: 320px;
-      height: 676px;
+      // height: 676px;
     }
     
   }
@@ -85,16 +85,16 @@
   position: relative;
   top: 0;
   left: 0;
-  margin: 10px 0 0 auto;
+  margin: 24px 0 0 auto;
   text-align: center;
   width: 132px;
   padding-top: 2px;
   padding-left: 7px;
 }
 
-.buy-btn__text::after {
+.buy-btn__text--modal::after {
   position: absolute;
-  margin-left: 18px;
+  margin-left: 10px !important;
 }
 
 .input {
